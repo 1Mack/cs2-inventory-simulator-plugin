@@ -30,7 +30,7 @@ public partial class InventorySimulator
 
     public HookResult OnPlayerCanRespawnPost(DynamicHook hook)
     {
-        if (!invsim_validation_enabled.Value)
+        if (!Config.Invsim_validation_enabled)
             return HookResult.Continue;
 
         var pawn = hook.GetParam<CCSPlayerPawn>(1);

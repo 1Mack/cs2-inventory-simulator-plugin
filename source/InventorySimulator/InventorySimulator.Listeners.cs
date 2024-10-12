@@ -38,9 +38,10 @@ public partial class InventorySimulator
 
                 GivePlayerWeaponSkin(player, weapon);
             });
-        } else if (designerName == "player_spray_decal")
+        }
+        else if (designerName == "player_spray_decal")
         {
-            if (!invsim_spraychanger_enabled.Value)
+            if (!Config.Invsim_spraychanger_enabled)
                 return;
 
             Server.NextFrame(() =>

@@ -11,15 +11,14 @@ namespace InventorySimulator;
 
 public partial class InventorySimulator
 {
-    [ConsoleCommand("css_ws", "Refreshes player's inventory.")]
     public void OnWSCommand(CCSPlayerController? player, CommandInfo _)
     {
         player?.PrintToChat(Localizer["invsim.announce", GetApiUrl()]);
 
-        if (!invsim_ws_enabled.Value || player == null) return;
+        if (!Config.Invsim_ws_enabled || player == null) return;
         if (PlayerCooldownManager.TryGetValue(player.SteamID, out var timestamp))
         {
-            var cooldown = invsim_ws_cooldown.Value;
+            var cooldown = Config.Invsim_ws_cooldown;
             var diff = Now() - timestamp;
             if (diff < cooldown)
             {
@@ -38,14 +37,13 @@ public partial class InventorySimulator
         player.PrintToChat(Localizer["invsim.ws_new"]);
     }
 
-    [ConsoleCommand("css_spray", "Spray player's graffiti.")]
     public void OnSprayCommand(CCSPlayerController? player, CommandInfo _)
     {
         if (player != null)
         {
             if (PlayerSprayCooldownManager.TryGetValue(player.SteamID, out var timestamp))
             {
-                var cooldown = invsim_spray_cooldown.Value;
+                var cooldown = Config.Invsim_spray_cooldown;
                 var diff = Now() - timestamp;
                 if (diff < cooldown)
                 {

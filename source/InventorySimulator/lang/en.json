@@ -1,8 +1,8 @@
 {
-  "invsim.announce": "Access your inventory at {0}.",
-  "invsim.ws_new": "Your inventory will be refreshed shortly.",
-  "invsim.ws_in_progress": "Your inventory is being refreshed.",
-  "invsim.ws_cooldown": "You cannot refresh your inventory right now. Please wait {0} seconds.",
-  "invsim.ws_completed": "Your inventory have been refreshed.",
-  "invsim.spray_cooldown": "You cannot spray right now. Please wait {0} seconds."
+    "invsim.announce": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Access your inventory at {GREEN}{0}.",
+    "invsim.ws_new": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Your inventory will be refreshed shortly.",
+    "invsim.ws_in_progress": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Your inventory is being refreshed.",
+    "invsim.ws_cooldown": "{GREEN}[SAVAGE | SKINS]{DEFAULT} You cannot refresh your inventory right now. Please wait {GREEN}{0}{DEFAULT} seconds.",
+    "invsim.ws_completed": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Your inventory have been {GREEN}refreshed.",
+    "invsim.spray_cooldown": "{GREEN}[SAVAGE | SKINS]{DEFAULT} You cannot spray right now. Please wait {GREEN}{0}{DEFAULT} seconds."
 }

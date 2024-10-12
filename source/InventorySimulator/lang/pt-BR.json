@@ -1,8 +1,8 @@
 {
-  "invsim.announce": "Acesse seu inventário em {0}.",
-  "invsim.ws_new": "Seu inventário será atualizado em instantes.",
-  "invsim.ws_in_progress": "Seu inventário está sendo atualizado.",
-  "invsim.ws_cooldown": "Você não pode atualizar seu inventário agora. Aguarde {0} segundos.",
-  "invsim.ws_completed": "Seu inventário foi atualizado.",
-  "invsim.spray_cooldown": "Você não pode grafitar agora. Aguarde {0} segundos."
+    "invsim.announce": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Acesse seu inventário em {GREEN}{0}.",
+    "invsim.ws_new": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Seu inventário será atualizado em instantes.",
+    "invsim.ws_in_progress": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Seu inventário está sendo atualizado.",
+    "invsim.ws_cooldown": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Você não pode atualizar seu inventário agora. Aguarde {GREEN}{0} {DEFAULT}segundos.",
+    "invsim.ws_completed": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Seu inventário foi {GREEN}atualizado.",
+    "invsim.spray_cooldown": "{GREEN}[SAVAGE | SKINS]{DEFAULT} Você não pode grafitar agora. Aguarde {GREEN}{0} {DEFAULT}segundos."
 }
